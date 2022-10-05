@@ -1,3 +1,4 @@
+
 import time
 import pywhatkit
 from tabulate import tabulate
@@ -13,10 +14,10 @@ import plotly.graph_objs as go
 data = yf.download(tickers='META', period='1d', interval='1m')
 df = data.filter(['Open'])
 print(tabulate(df, headers = 'keys', tablefmt = 'psql'))
-pywhatkit.sendwhatmsg_instantly("+919923982572", "Hello! ", 10, True, 10)
-pywhatkit.sendwhatmsg_instantly("+919923982572", "Welcome to Stock_Tracker_Alert System! ", 10, True, 10)
-pywhatkit.sendwhatmsg_instantly("+919923982572", "You will soon start getting alerts of Facebook Stock", 10, True, 10)
-pywhatkit.sendwhatmsg_instantly("+919923982572", "Sit back and enjoy! ", 10, True, 10)
+pywhatkit.sendwhatmsg_instantly("+ph number", "Hello! ", 10, True, 10)
+pywhatkit.sendwhatmsg_instantly("+ph number", "Welcome to Stock_Tracker_Alert System! ", 10, True, 10)
+pywhatkit.sendwhatmsg_instantly("+ph number", "You will soon start getting alerts of Facebook Stock", 10, True, 10)
+pywhatkit.sendwhatmsg_instantly("+ph number", "Sit back and enjoy! ", 10, True, 10)
 
 i = 1
 while i==1:
@@ -36,11 +37,11 @@ while i==1:
     print(a-b)
     c = (((a-b)/b)*100)
     if (c > 1):
-        pywhatkit.sendwhatmsg_instantly("+919923982572", "Increased by " +str(c), 10, True, 10)
+        pywhatkit.sendwhatmsg_instantly("+ph number", "Increased by " +str(c), 10, True, 10)
         #pywhatkit.playonyt("lovely by billie")
     else:
 
-        pywhatkit.sendwhatmsg_instantly("+919923982572", "Decreased by " +str(c), 10, True, 10)
+        pywhatkit.sendwhatmsg_instantly("+ph number", "Decreased by " +str(c), 10, True, 10)
     #print(percentage_change)
 
    # last_change = Open_data.last()
